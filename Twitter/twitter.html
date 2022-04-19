@@ -32,7 +32,7 @@
         </div>
   
        <!-- MIDDLE - SIDE -->
-        <div>
+        <div class="right">
             <div class="top">
                 <div class="" ><h1>Home</h1></div>
                 <div class=""><a href="#" class="menulogo"><img src="imgs/toptweets.png" width="20"></a></div>
@@ -42,60 +42,64 @@
             <form>
                 <div class="tweetbox__input">
                     <div class="acct-mg"><img src="imgs/dog1.jpeg" class="picture"/></div>
-                    <div class="act-name">
-                        <p><h3>Mr. Dog</h3>
-                        <h4>@Dog</h4></p>
+                    <div class="tweet_input">
+                        <textarea id="tweet_inpuit_box" name="tweet_inpuit_box" class="tweet_inpuit_box" rows="4" cols="50" placeholder="What's happening?"></textarea>
                     </div>
-                    <input type="text" placeholder="What's happening?" />
                 </div>
     
-                <div class="top">
-                        <h5><span class="material-icons-outlined"> public</span></h5>
-                        <h5>Everyone can reply </h5>
+                <div class="top-privacy">
+                        <img src="imgs/privacyreply.png" class="imgprivacy" />
+                        <h5>Everyone can reply</h5>
+                        <hr />
+                        <!-- <h5><span class="material-icons-outlined"> public</span></h5>
+                        <h5>Everyone can reply </h5> -->
                </div>
 
                 <div class="top">
-                    <div >                
-                        <img src="imgs/media.png" class="picture"/>
-                        <img src="imgs/gif.png" class="picture"/>
-                        <img src="imgs/poll.png" class="picture"/>
-                        <img src="imgs/emoji.png" class="picture"/>
-                        <img src="imgs/schedule.png" class="picture"/>
-                        <img src="imgs/location.png" class="picture"/>
+                    <div class="iconsnav">                
+                        <a href="#" class="iconlink"><img src="imgs/media.png" class="icon"/></a>
+                        <a href="#" class="iconlink"><img src="imgs/gif.png" class="icon"/></a>
+                        <a href="#" class="iconlink"><img src="imgs/poll.png" class="icon"/></a>
+                        <a href="#" class="iconlink"><img src="imgs/emoji.png" class="icon"/></a>
+                        <a href="#" class="iconlink"><img src="imgs/schedule.png" class="icon"/></a>
+                        <a href="#" class="iconlink"><img src="imgs/location.png" class="icon"/></a>
                     </div>
                     <div >
-                        <button>Tweet</button>
+                        <!-- <button>Tweet</button> -->
+                        <a href="#" class="btntweetsmall">Tweet</a>
                     </div>
                 </div>
             </form>
-            </div>
+        </div>
 
        <!-- post 1 -->
         <div class="post">
             <div class="post__avatar">
-                <img src="imgs/person1tweet.png" alt=""/>
+                <img src="imgs/avatar01.png" alt=""/>
             </div>
             <div class="post__body">
                 <div class="post__header">
                     <div class="post__headerText">
-                        <h3>
-                            Somanath Goudar
-                            <span class="post__headerSpecial" ><span class="material-icons post__badge"> verified </span>@somanathg</span>
-                        </h3>
+                        <h3><a href="#" class="name">John Doe</a></h3>
+                        <img src="imgs/verified.png" class="verifiedicon" />
+                        <h4>@JohnDoe · 3h</h4>
                     </div>
                     <div class="post__headerDescription">
-                        <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
                     </div>
                 </div>
                 <img src="imgs/Tesla.jpg" alt="" />
                 
                 <div class="post__footer">
-                    <span class="material-icons-outlined">favorite_border</span>
-                    <span class="material-icons-outlined">question_answer</span>
-                    <span class="material-icons-outlined">ios_share</span>
+                    
+                    <a href="#" class="iconlinktwit"><img src="imgs/reply.png" class="imgtweet" /></a>
+                    <a href="#" class="iconlinktwit"><img src="imgs/retweet.png" class="imgtweet" /></a>
+                    <a href="#" class="iconlinktwit"><img src="imgs/like.png" class="imgtweet" /></a>
+                    <a href="#" class="iconlinktwit"><img src="imgs/share.png" class="imgtweet" /></a>
                 </div>
             </div>
         </div>
+        
 
         <!-- post 2 -->
         <div class="post">
@@ -104,53 +108,65 @@
             </div>
             <div class="post__body">
                 <div class="post__header">
-                   <div class="post__headerText">
-                        <h3>
-                            Rodrigo 
-                            <span class="post__headerSpecial" ><span class="material-icons post__badge"> verified </span>@NetFlix</span>
-                        </h3>
+                    <div class="post__headerText">
+                        <h3><a href="#" class="name">Netflix</a></h3>
+                        <img src="imgs/verified.png" class="verifiedicon" />
+                        <h4>@Netflix · 3h</h4>
                     </div>
                     <div class="post__headerDescription">
-                       <h4>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h4>
+                        <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h3>
                     </div>
                 </div>
-                    <img src="imgs/Man.jpg" alt="" />
-                   
-                    <div class="post__footer">
-                        <span class="material-icons-outlined">favorite_border</span>
-                        <span class="material-icons-outlined">question_answer</span>
-                        <span class="material-icons-outlined">ios_share</span>
-                    </div>
+                <img src="imgs/netflix-series.jpg" alt="" />
+                
+                <div class="post__footer">
+                    
+                    <a href="#" class="iconlinktwit"><img src="imgs/reply.png" class="imgtweet" /></a>
+                    <a href="#" class="iconlinktwit"><img src="imgs/retweet.png" class="imgtweet" /></a>
+                    <a href="#" class="iconlinktwit"><img src="imgs/like.png" class="imgtweet" /></a>
+                    <a href="#" class="iconlinktwit"><img src="imgs/share.png" class="imgtweet" /></a>
                 </div>
+            </div>
         </div>
-        </div>
-
+    </div>
         <!-- RIGHT SIDE -->
         <div class="widgets">
             <div class="widgets__input">
-            <div class=""><input type="text" placeholder="Search Twitter" id="input-search"/></div>
+                <div class=""><input type="text" placeholder="Search Twitter" id="input-search"/></div>
             </div>
 
             <div class="widgets__widgetContainer">
-            <h2>What's happening?</h2>
-            <blockquote class="twitter-tweet">
-                <p lang="en" dir="ltr">
-                Sunsets don&#39;t get much better than this one over
-                <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>.
-                <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw"
-                    >#nature</a
-                >
-                <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw"
-                    >#sunset</a
-                >
-                <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a>
-                </p>
-                &mdash; US Department of the Interior (@Interior)
-                <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw"
-                >May 5, 2014</a
-                >
-            </blockquote>
-            <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                <h2>Trending Topics</h2>
+                <ol>
+                    <a href="#" class="linktt"><li><h3>#Canucks</h3></li></a>
+                    <a href="#" class="linktt"><li><h3>Happy Easter</h3></li></a>
+                    <a href="#" class="linktt"><li><h3>Prime Minister of Canada</h3></li></a>
+                    <a href="#" class="linktt"><li><h3>#ThorLoveAndThunder</h3></li></a>
+                    <a href="#" class="linktt"><li><h3>Batman</h3></li></a>
+                    <a href="#" class="linktt"><li><h3>Warriors</h3></li></a>
+                    <a href="#" class="linktt"><li><h3>Fantastic Beasts</h3></li></a>
+                    <a href="#" class="linktt"><li><h3>Vancouver</h3></li></a>
+                    <a href="#" class="linktt"><li><h3>British Columbia</h3></li></a>
+                    <a href="#" class="linktt"><li><h3>Trudeau</h3></li></a>
+                </ol>
+                <!-- <blockquote class="twitter-tweet">
+                    <p lang="en" dir="ltr">
+                    Sunsets don&#39;t get much better than this one over
+                    <a href="https://twitter.com/GrandTetonNPS?ref_src=twsrc%5Etfw">@GrandTetonNPS</a>.
+                    <a href="https://twitter.com/hashtag/nature?src=hash&amp;ref_src=twsrc%5Etfw"
+                        >#nature</a
+                    >
+                    <a href="https://twitter.com/hashtag/sunset?src=hash&amp;ref_src=twsrc%5Etfw"
+                        >#sunset</a
+                    >
+                    <a href="http://t.co/YuKy2rcjyU">pic.twitter.com/YuKy2rcjyU</a>
+                    </p>
+                    &mdash; US Department of the Interior (@Interior)
+                    <a href="https://twitter.com/Interior/status/463440424141459456?ref_src=twsrc%5Etfw"
+                    >May 5, 2014</a
+                    >
+                </blockquote>
+                <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
             </div>
         </div>
        
