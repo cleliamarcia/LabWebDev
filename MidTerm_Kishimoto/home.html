@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link href="style.css" rel="stylesheet">
+    <title>Kishimoto Japanese Restaurant</title>
+    
+</head>
+
+<script type="text/javascript">
+
+    function iframeDidLoad() {
+        alert('Done');
+    }
+    
+    function changePage(num) {
+       if (num== 0){
+        var page ='frame.html';
+       }
+       if (num== 1){
+        var page ='menu.html';
+       
+       }
+
+       if (num== 2){
+        var page ='gallery.html';
+       }
+
+       if (num== 3){
+        var page ='about.html';
+       
+       }
+
+       if (num== 4){
+        var page ='covid.html';
+       
+       }
+       
+       if (num== 5){
+        var page ='reservation.html';
+       
+       }
+       
+       if (num== 6){
+        var page ='news.html';
+       
+       }
+       
+        document.getElementById('myIframe').src = page;
+    }    
+    </script>
+
+<body>
+
+<!--TOP MENU-->
+<div>
+    <div><image src="images/logoKishmoto.png"></image><div>
+    <div class="topmenu">
+        <a href="#" class="menu" onClick="changePage(0)"><i class="home"></i>HOME</a>
+        <a href="#" class="menu" onClick="changePage(1)"><i class="menu"></i>MENU</a>
+        <a href="#" class="menu" onClick="changePage(2)"><i class="gallery"></i>GALLERY</a>
+        <a href="#" class="menu" onClick="changePage(3)"><i class="about"></i>ABOUT</a>
+        <a href="#" class="menu" onClick="changePage(4)"><i class="covid"></i>COVID</a>
+        <a href="#" class="menu" onClick="changePage(5)"><i class="reservation"></i>RESERVATION</a>
+        <a href="#" class="menu" onClick="changePage(6)"><i class="news"></i>NEWS</a>
+    </div>
+</div>
+<!--SUBPAGE-->
+<div>
+    <iframe id= "myIframe" src="frame.html"  width="100%" height="600" frameBorder="0"></iframe>
+</div>
+
+
+<!--FOOTER MENU-->
+<div>
+    <div><h2>HOURS</h2><div>
+    <div class="footmenu">
+        <h2>2054 Commercial Drive     Vancouver, BC     v5n4a9     604-255-5550</h2>
+    </div>
+</div>
+
+</body>
+</html>
