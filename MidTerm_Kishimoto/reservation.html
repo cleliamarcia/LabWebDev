@@ -4,15 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
-        
     <link href="style.css" rel="stylesheet">
     <title>menu</title>
 </head>
 <body>
-    <div class="main" >
-       <h3> RESERVATION FORM</h3>
-    </div>
-
     <div class="container">
         <form action="reservationanswer.html">
           <div class="row">
@@ -36,7 +31,8 @@
               <label for="hour">Reservation Hour</label>
             </div>
             <div class="col-75">
-              <select id="hour" name="hour">
+              <select id="hour" name="hour" >
+                <option value=" ">Choose a service..</option>
                 <option value="breakfast">Breakfast</option>
                 <option value="lunch">Lunch</option>
                 <option value="dinner">Dinner</option>
@@ -48,7 +44,7 @@
               <label for="subject">Subject</label>
             </div>
             <div class="col-75">
-              <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+              <textarea id="subject" name="subject" placeholder="Write here... How many person will came and if you need special attention. Let us know " style="height:200px"></textarea>
             </div>
           </div>
           <div class="row">
