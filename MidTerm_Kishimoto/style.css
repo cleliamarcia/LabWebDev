@@ -7,11 +7,14 @@ body{
     height: 100%;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 
 a{
 color: white;
-font-style:unset;
+font-style: normal;
+text-decoration: none;
+
 
 }
 
@@ -41,7 +44,7 @@ ul {
     background-color: black;
     color: white;
     float: left;
-    width: 80%; /* The width is 60%, by default */
+    width: 100%; /* The width is 60%, by default */
   }
   
   /* Use a media query to add a breakpoint at 800px: */
@@ -121,7 +124,17 @@ input[type=submit] {
     margin-top: 0;
   }
 }
+
 /*Top Menu */
+.topmenu{
+  text-align: center;
+  font-family: Forum, serif;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+}
+
 .menu{
   display:inline-flex;
   margin:1rem;
@@ -131,6 +144,7 @@ input[type=submit] {
   font-size: 20px;
 
 }
+
 
 .menurow{
   display: flex;
@@ -259,9 +273,11 @@ a:hover{
 }
 /* gallery end */
 /* about */
+
 .aboutMain{
   text-align: center;
 }
+
 .awards{
   display:block;
   text-align: center;
