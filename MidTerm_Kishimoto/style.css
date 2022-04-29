@@ -10,6 +10,13 @@ body{
     flex-direction: column;
 }
 
+a{
+color: white;
+font-style:unset;
+
+}
+
+
 ul {
   display: block;
   list-style-type: disc;
@@ -89,7 +96,7 @@ input[type=submit] {
 /* Style the container */
 .container {
   border-radius: 5px;
-  background-color: #6e6868;
+  background-color: #363535;
   padding: 20px;
   width: 60%;
 }
@@ -132,15 +139,14 @@ input[type=submit] {
 
 .menurow{
   display: flex;
-  margin-bottom: 2em;
+  margin-bottom: 1em;
 
 }
 
 
 .menucolumn{
   display: inline-block;
-  margin-left: 2em;
-  
+  margin-left: 2em; 
   
 }
 
@@ -170,7 +176,7 @@ input[type=submit] {
 .post__footer {
   display: flex;
   justify-content: space-between;
-  margin-top: 10px;
+  margin-top: 20px;
   color: #FFFFFF;
   border-top: 1px solid #37444D;
 }
@@ -217,16 +223,15 @@ input[type=submit] {
 }
 
 .post__headerDescription h3 {
-  font-size: 20px;
+  font-size: 25px;
   font-weight: normal;
   font-family: Forum, serif;
 }
-
  
 .post__body {
   flex: 1;
   padding: 10px;
-}
+ }
 
 .post__avatar {
   padding: 20px;
