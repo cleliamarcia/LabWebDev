@@ -38,8 +38,8 @@ ul {
   }
   
   .main {
-    background-color: white;
-    color: black;
+    background-color: black;
+    color: white;
     float: left;
     width: 80%; /* The width is 60%, by default */
   }
@@ -81,9 +81,15 @@ input[type=submit] {
 }
 
 /* Style the container */
-.reservationform {
+.container {
   border-radius: 5px;
   background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.reservationform {
+  border-radius: 5px;
+  background-color: #2e2d2d;
   padding: 20px;
 }
 
