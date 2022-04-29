@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
-
 body{
     background-color: black;
     color: white;    
@@ -31,34 +30,23 @@ ul {
 .main {
     background-color: black;
     color: white;
-    float: center;
-    width: 90%;
-    height: 100%;
-    margin-left: 3em;
-    justify-content: center;
+}
+
+.left, .right {
+    float: left;
+    width: 20%; /* The width is 20%, by default */
   }
-
-  .title{
-    font-family: Forum, serif;
-    font-size: 34px;
+  
+  .main {
+    background-color: white;
+    color: black;
+    float: left;
+    width: 80%; /* The width is 60%, by default */
   }
-
-  .title_align{
-    display: flex;
-    align-content: center;
-  }
-
-  .title_line{
-    display: flex;
-    align-content: center;
-    border-bottom: 1;
-
-  }
-
-
-/* Use a media query to add a breakpoint at 800px: */
-@media screen and (max-width: 800px) {
- .left, .main, .right {
+  
+  /* Use a media query to add a breakpoint at 800px: */
+  @media screen and (max-width: 800px) {
+    .left, .main, .right {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
   }
@@ -76,15 +64,14 @@ input[type=text], select, textarea{
 
 /* Style the label to display next to the inputs */
 label {
-  padding: 8px 8px 8px 0;
+  padding: 12px 12px 12px 0;
   display: inline-block;
-  color: white;
-  justify-items: right;
+  color: blueviolet;
 }
 
 /* Style the submit button */
 input[type=submit] {
-  background-color: #1c1d1d;
+  background-color: #04AA6D;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -96,22 +83,21 @@ input[type=submit] {
 /* Style the container */
 .reservationform {
   border-radius: 5px;
-  background-color: #363535;
+  background-color: #f2f2f2;
   padding: 20px;
-  width: 60%;
 }
 
 /* Floating column for labels: 25% width */
 .col-25 {
   float: left;
-  width: 20%;
+  width: 25%;
   margin-top: 6px;
 }
 
 /* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
-  width: 80%;
+  width: 75%;
   margin-top: 6px;
 }
 
@@ -129,9 +115,12 @@ input[type=submit] {
     margin-top: 0;
   }
 }
-
-
+/*Top Menu */
 .menu{
+  display:inline-flex;
+  margin:1rem;
+  color: white;
+  text-align: center;
   font-family: Forum, serif;
   font-size: 20px;
 
@@ -226,6 +215,56 @@ input[type=submit] {
   font-size: 25px;
   font-weight: normal;
   font-family: Forum, serif;
+  font-size: 20px;
+}
+
+a:hover{
+  color:NavajoWhite;
+  /* background:green; */
+}
+/* images change size and position */
+/* image{
+  position:static;
+  display:grid;
+  width:100%;
+  height:auto;
+  min-height: 548px;
+  grid-template-rows:1fr;
+  grid-template-columns: 100%;
+  padding:bottom;
+  box-sizing:border-box;
+} */
+
+/* gallery */
+.flex_test-box{
+  padding: 10px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  /* flex-wrap: wrap; */
+  /* align-content: stretch; */
+}
+.flex_test-item{
+  padding: 10px;
+  margin:10px;
+  width: 200px;
+  text-align: center;
+}
+/* gallery end */
+/* about */
+.aboutMain{
+  text-align: center;
+}
+.awards{
+  display:block;
+  text-align: center;
+  margin-left:auto;
+  margin-right: auto;
+}
+.color-24{
+  text-align: center;
+  color:red;
 }
  
 .post__body {
@@ -236,5 +275,3 @@ input[type=submit] {
 .post__avatar {
   padding: 20px;
 }
-
-
