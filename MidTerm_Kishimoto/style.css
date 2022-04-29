@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
 body{
     background-color: black;
     color: white;
@@ -85,4 +86,61 @@ input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+}
+/*Top Menu */
+.menu{
+  display:inline-flex;
+  margin:1rem;
+  color: white;
+  text-align: center;
+  font-family: Forum, serif;
+  font-size: 20px;
+}
+a:hover{
+  color:NavajoWhite;
+  /* background:green; */
+}
+/* images change size and position */
+/* image{
+  position:static;
+  display:grid;
+  width:100%;
+  height:auto;
+  min-height: 548px;
+  grid-template-rows:1fr;
+  grid-template-columns: 100%;
+  padding:bottom;
+  box-sizing:border-box;
+} */
+
+/* gallery */
+.flex_test-box{
+  padding: 10px;
+  height: 300px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 2rem;
+  /* flex-wrap: wrap; */
+  /* align-content: stretch; */
+}
+.flex_test-item{
+  padding: 10px;
+  margin:10px;
+  width: 200px;
+  text-align: center;
+}
+/* gallery end */
+/* about */
+.aboutMain{
+  text-align: center;
+}
+.awards{
+  display:block;
+  text-align: center;
+  margin-left:auto;
+  margin-right: auto;
+}
+.color-24{
+  text-align: center;
+  color:red;
 }

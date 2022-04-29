@@ -8,10 +8,140 @@
     <link href="style.css" rel="stylesheet">
     <title>menu</title>
 </head>
+<script type="text/javascript">
+
+    function iframeDidLoad() {
+        alert('Done');
+    }
+    
+    function changePage(num) {
+       if (num== 0){
+        var page ='frame.html';
+       }
+       if (num== 1){
+        var page ='menu.html';
+       
+       }
+
+       if (num== 2){
+        var page ='gallery.html';
+       }
+
+       if (num== 3){
+        var page ='about.html';
+       
+       }
+
+       if (num== 4){
+        var page ='covid.html';
+       
+       }
+       
+       if (num== 5){
+        var page ='reservation.html';
+       
+       }
+       
+       if (num== 6){
+        var page ='news.html';
+       
+       }
+       
+        document.getElementById('myIframe').src = page;
+    }    
+    </script>
 <body>
-    <div class="main" >
+    <!-- <div>
+        <div><image src="images/logoKishmoto.png"></image><div>
+        <div class="topmenu">
+            <a href="#" class="menu" onClick="changePage(0)">HOME</a>
+            <a href="#" class="menu" onClick="changePage(1)">MENU</a>
+            <a href="#" class="menu" onClick="changePage(2)">GALLERY</a>
+            <a href="#" class="menu" onClick="changePage(3)">ABOUT</a>
+            <a href="#" class="menu" onClick="changePage(4)">COVID</a>
+            <a href="#" class="menu" onClick="changePage(5)">RESERVATION</a>
+            <a href="#" class="menu" onClick="changePage(6)">NEWS</a>
+        </div>
+    </div> -->
+    
+    <div class="aboutMain" >
        <h3> ABOUT</h3>
+       <p>This year we celebrate our 10th anniversary. 
+        To all of our customers, supporters, farmers, fisherman, suppliers, and team members - 
+        Thank you so much for everything. We truly appreciate your support! 
+        We look forward to serving our community some of the best Japanese cuisine in the city for many more years. </p>
     </div>
+    <dic class="awards">
+        <h3>AWARDS</h3>
+        <span class="color-24">2021 - ThreeBestRated.ca</span>
+            <span class="color-13">- Top 3 Japanese Restaurants in Vancouver, BC</span>
+            <br>
+            <span class="color-24">2020 - Vancouver Magazine 31st Annual Restaurant Awards</span>
+            <span class="color-13">- Best Neighbourhood - East Side (silver)</span>
+            <br>
+            <span class="color-24">2019 - ThreeBestRated.ca</span>
+            <span class="color-13">- Top 3 Japanese Restaurants in Vancouver, BC</span>
+            <br>
+            <span class="color-24">2019 - Vancouver Magazine 30th Annual Restaurant Awards</span>
+            <span class="color-13">- Best Neighbourhood - East Side (silver)</span>
+            <br>
+            <span class="color-24">2019 - Vancouver Courier Stars of Vancouver</span>
+            <span class="color-13">- best Japanese restaurant (runner-up)</span>
+            <br>
+            <span class="color-24">2019 - "People Love Us On Yelp" best reviewed businesses on Yelp</span>
+            <br>
+            <span class="color-24">2018 - TripAdvisor Certificate of Excellence</span>
+            <br>
+            <span class="color-24">2018 - Yelp's Top 50 Places to Eat in Vancouver</span>
+            <span class="color-13">- #10</span>
+            <br>
+            <span class="color-24">2018 - Vancouver Courier Reader's Choice Awards</span>
+            <span class="color-13">- Japanese/Sushi East (2nd place)</span>
+            <br>
+            <span class="color-24">2018 - Vancouver Magazine 29th Annual Restaurant Awards</span>
+            <span class="color-13">- Best Japanese (silver)</span>
+            <br>
+            <span class="color-24">2018 - Vancouver Magazine 29th Annual Restaurant Awards</span>
+            <span class="color-13">- Best Neighbourhood - East Side (silver)</span>
+            <br>
+            <span class="color-24">2018 - Yelp's Top 100 Places to Eat in Canada</span>
+            <br>
+            <span class="color-24">2017 - Vancouver Magazine 28th Annual Restaurant Awards</span>
+            <span class="color-13">- Best Sushi (honourable mention)</span>
+            <br>
+            <span class="color-24">2017 - "People Love Us On Yelp" best reviewed businesses on Yelp</span>
+            <br>
+            <span class="color-24">2017 - Yelp's Top 100 Places to Eat in Canada</span>
+            <br>
+            <span class="color-24">2016 - Vancouver Magazine 27th Annual Restaurant Awards </span>
+            <span class="color-13">- Best Casual Japanese (honourable mention)</span>
+            <br>
+            <span class="color-24">2016 - Georgia Straight 19th Annual Golden Plates</span>
+            <span class="color-13">- Best Japanese (runner-up)</span>
+            <br>
+            <span class="color-24">2016 - Vancouver Courier Reader's Choice Awards</span>
+            <span class="color-13">- Japanese/Sushi East (2nd place)</span>
+            <br>
+            <span class="color-24">2016 - Lianorg Top Choice Restaurant</span>
+            <br>
+            <span class="color-24">2016 - Where Magazine Where To Dine Awards</span>
+            <span class="color-13">- Best Japanese/Best Seafood (nominee)</span>
+            <br>
+            <span class="color-24">2015 - Vancouver Magazine 26th Annual Restaurant Awards</span>
+            <span class="color-13">- Best Japanese Casual (bronze)</span>
+            <br>
+            <span class="color-24">2015 - TripAdvisor Certificate of Excellence</span>
+            <br>
+            <span class="color-24">2015 - Lianorg Top Choice Restaurant</span>
+            <br>
+            <span class="color-24">2014 - Vancouver Magazine 25th Annual Restaurant Awards</span>
+            <span class="color-13">- Best Casual Japanese (silver)</span>
+            <br>
+            <span class="color-24">2013 - Vancouver Magazine 25th Annual Restaurant Awards</span>
+            <span class="color-13">- Best Casual Japanese (honourable mention)</span>
+           
+        </div>
+    </dic>
 
 </body>
 </html>
