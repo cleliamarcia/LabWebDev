@@ -1,23 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
 body{
     background-color: black;
-    color: white;
+    color: white;    
+    font-size: 14px;
+    font-family: 'Open Sans',sans-serif;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
 }
 
-.left, .right {
-    float: left;
-    width: 20%; /* The width is 20%, by default */
+ul {
+  display: block;
+  list-style-type: disc;
+  margin-top: 1em;
+  margin-bottom: 1 em;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 40px;
+}
+
+.main {
+    background-color: black;
+    color: white;
+    float: center;
+    width: 90%;
+    height: 100%;
+    margin-left: 3em;
   }
-  
-  .main {
-    background-color: white;
-    color: black;
-    float: left;
-    width: 80%; /* The width is 60%, by default */
+
+  .title{
+    font-family: Forum, serif;
+    font-size: 34px;
   }
-  
-  /* Use a media query to add a breakpoint at 800px: */
-  @media screen and (max-width: 800px) {
-    .left, .main, .right {
+
+  .title_align{
+    display: flex;
+    align-content: center;
+  }
+
+  .title_line{
+    display: flex;
+    align-content: center;
+    border-bottom: 1;
+
+  }
+
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+ .left, .main, .right {
       width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
     }
   }
@@ -85,4 +117,24 @@ input[type=submit] {
     width: 100%;
     margin-top: 0;
   }
+}
+
+.menu{
+  font-family: Forum, serif;
+  font-size: 20px;
+
+}
+
+.menurow{
+  display: flex;
+  margin-bottom: 2em;
+
+}
+
+
+.menucolumn{
+  display: inline-block;
+  margin-left: 2em;
+  
+  
 }
