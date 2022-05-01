@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Forum&display=swap');
+
 body{
     background-color: black;
     color: white;    
@@ -10,12 +11,15 @@ body{
     align-items: center;
 }
 
-a{
+a {
 color: white;
 font-style: normal;
 text-decoration: none;
+}
 
-
+ 
+a:hover{
+  color:NavajoWhite;
 }
 
 
@@ -29,23 +33,19 @@ ul {
   padding-left: 40px;
 }
 
-
 .main {
     background-color: black;
     color: white;
-}
-
-.left, .right {
     float: left;
-    width: 20%; /* The width is 20%, by default */
+    width: 80%; 
+    align-items: center;
   }
   
-  .main {
-    background-color: black;
-    color: white;
+  .left, .right {
     float: left;
-    width: 100%; /* The width is 60%, by default */
+    width: 20%; 
   }
+  
   
   /* Use a media query to add a breakpoint at 800px: */
   @media screen and (max-width: 800px) {
@@ -55,8 +55,124 @@ ul {
   }
 
 
-  /* Style  RESERVATION FORM inputs, select elements and textareas */
-input[type=text], select, textarea{
+  /*   --------- PAGE HOME  -----------------*/
+.topmenu{
+  text-align: center;
+  font-family: Forum, serif;
+  font-size: 20px;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid white;
+  margin-top: 1em;
+}
+
+.menu{
+  display:inline-flex;
+  margin:1rem;
+  color: white;
+  text-align: center;
+  font-family: Forum, serif;
+  font-size: 18px;
+
+}
+
+.footmenu{
+  display: flex;
+  margin-bottom: 1em;
+
+}
+
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+
+/*   --------- PAGE MENU    -----------------*/
+
+.menurow{
+  display: flex;
+  margin-bottom: 1em;
+
+}
+
+
+.menucolumn{
+  display: inline-block;
+  margin-left: 2em; 
+  
+}
+
+
+  /*   --------- PAGE GALLERY   -----------------*/
+
+  .flex_test-box{
+    padding: 10px;
+    height: 300px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 2rem;
+    /* flex-wrap: wrap; */
+    /* align-content: stretch; */
+  }
+ 
+  .flex_test-item{
+    padding: 10px;
+    margin:10px;
+    width: 200px;
+    text-align: center;
+  }
+  /* gallery end */
+  /* about */
+  
+  .aboutMain{
+    text-align: center;
+  }
+  
+  .awards{
+    display:block;
+    text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+  }
+  .color-24{
+    text-align: center;
+    color:red;
+  }
+   
+  
+
+  /*   --------- PAGE COVID    -----------------*/
+
+  .title{
+    text-align: center;
+    font-family: Forum, serif;
+    font-size: 30px;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid white;
+  }
+  
+  .title_grid{
+    display: grid;
+    grid-auto-flow: column;
+  }
+  
+  .title_column{
+    display: inline-block;
+    text-align: center;
+    margin-left: 1em; 
+  }
+  
+
+  
+
+
+  /*   --------- PAGE RESERVATION FORM    -----------------*/
+
+  input[type=text], select, textarea{
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
@@ -65,16 +181,14 @@ input[type=text], select, textarea{
   resize: vertical;
 }
 
-/* Style the label to display next to the inputs */
 label {
-  padding: 12px 12px 12px 0;
+  padding: 12px 12px 12px 12px;
   display: inline-block;
-  color: blueviolet;
+  color:white;
 }
 
-/* Style the submit button */
 input[type=submit] {
-  background-color: #04AA6D;
+  background-color: #313534;
   color: white;
   padding: 12px 20px;
   border: none;
@@ -83,27 +197,19 @@ input[type=submit] {
   float: right;
 }
 
-/* Style the container */
-.container {
-  border-radius: 5px;
-  background-color: #f2f2f2;
-  padding: 20px;
-}
-
 .reservationform {
   border-radius: 5px;
-  background-color: #2e2d2d;
+  background-color: #646262;
   padding: 20px;
+  width: 50%;
 }
 
-/* Floating column for labels: 25% width */
 .col-25 {
   float: left;
   width: 25%;
   margin-top: 6px;
 }
 
-/* Floating column for inputs: 75% width */
 .col-75 {
   float: left;
   width: 75%;
@@ -125,42 +231,8 @@ input[type=submit] {
   }
 }
 
-/*Top Menu */
-.topmenu{
-  text-align: center;
-  font-family: Forum, serif;
-  font-size: 20px;
-  align-items: center;
-  justify-content: center;
-  border-bottom: 1px solid white;
-}
 
-.menu{
-  display:inline-flex;
-  margin:1rem;
-  color: white;
-  text-align: center;
-  font-family: Forum, serif;
-  font-size: 20px;
-
-}
-
-
-.menurow{
-  display: flex;
-  margin-bottom: 1em;
-
-}
-
-
-.menucolumn{
-  display: inline-block;
-  margin-left: 2em; 
-  
-}
-
-
-/* post */
+  /*   --------- PAGE NEWS   -----------------*/
 .post__avatar img {
   border-radius: 50%;
   height: 40px;
@@ -174,12 +246,7 @@ input[type=submit] {
   border-top: 1px solid #37444D;
   border-left: 1px solid #37444D;
   border-right: 1px solid #37444D;
-}
-
-.post__body img {
-  width: 450px;
-  object-fit: contain;
-  border-radius: 20px;
+  margin-top: 2em;
 }
 
 .post__footer {
@@ -190,25 +257,30 @@ input[type=submit] {
   border-top: 1px solid #37444D;
 }
 
-.post__footer .imgtweet {
-  width: 20px;
-}
-
-.post__badge {
-  font-size: 14px !important;
-  color: white;
-  margin-right: 5px;
-}
-
 .post__headerSpecial {
   font-weight: 600;
-  font-size: 12px;
-  color: gray;
+  font-size: 10px;
+  color: white;
+  display: grid;
+  grid-auto-flow: column;
+}
+
+.post__headerSpecial_left {
+  display: inline-block;
+  text-align: left;
+  margin-left: 1em; 
+}
+
+.post__headerSpecial_right {
+  display: inline-block;
+  text-align: right;
+  align-items: right;
 }
 
 .post__headerText {
   display: inline;
 }
+
 .post__headerText h3 {
   font-size: 15px;
   margin-bottom: 5px;
@@ -221,9 +293,7 @@ input[type=submit] {
   display: inline;
 }
 
-.post__headerText .verifiedicon {
-  width: 15px;
-}
+
 
 .post__headerDescription {
   padding-top: 5px;
@@ -232,63 +302,22 @@ input[type=submit] {
 }
 
 .post__headerDescription h3 {
-  font-size: 25px;
+  font-size: 30px;
   font-weight: normal;
   font-family: Forum, serif;
-  font-size: 20px;
 }
 
-a:hover{
-  color:NavajoWhite;
-  /* background:green; */
-}
-/* images change size and position */
-/* image{
-  position:static;
-  display:grid;
-  width:100%;
-  height:auto;
-  min-height: 548px;
-  grid-template-rows:1fr;
-  grid-template-columns: 100%;
-  padding:bottom;
-  box-sizing:border-box;
-} */
-
-/* gallery */
-.flex_test-box{
-  padding: 10px;
-  height: 300px;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  column-gap: 2rem;
-  /* flex-wrap: wrap; */
-  /* align-content: stretch; */
-}
-.flex_test-item{
-  padding: 10px;
-  margin:10px;
-  width: 200px;
-  text-align: center;
-}
-/* gallery end */
-/* about */
-
-.aboutMain{
-  text-align: center;
+.btn_news{
+background-color: black;
+color: rgb(223, 169, 19);
+border: 1px solid rgb(223, 169, 19);
+padding: 10px;
+margin-top: 1em;
+margin-bottom: 1em;
+margin-left: 1em;
+margin-right: 1em;
 }
 
-.awards{
-  display:block;
-  text-align: center;
-  margin-left:auto;
-  margin-right: auto;
-}
-.color-24{
-  text-align: center;
-  color:red;
-}
- 
 .post__body {
   flex: 1;
   padding: 10px;
