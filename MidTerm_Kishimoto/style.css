@@ -33,6 +33,7 @@ ul {
   padding-left: 40px;
 }
 
+
 .main {
     background-color: black;
     color: white;
@@ -77,11 +78,31 @@ ul {
 }
 
 .footmenu{
-  display: flex;
-  margin-bottom: 1em;
-
+  display:inline-flex;
+  margin:1rem;
+  border-top: 1px solid white;
+  border-bottom: 1px solid white;
+  align-content: center;
+  justify-content: center;
 }
 
+.footrow{
+  display: flex;
+  margin-bottom: 1em;
+}
+
+.footline{
+  border-left:  1px solid white;
+  border-top: 1px solid white;
+}
+
+.footfinal{
+  display: flex;
+  margin-bottom: 1em;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
 .container {
   border-radius: 5px;
@@ -89,6 +110,19 @@ ul {
   padding: 20px;
 }
 
+
+.mini{
+  color: rgb(165, 164, 162);    
+  font-family: 'Open Sans',sans-serif;
+  font-size: 11px;
+}
+
+
+.spanmax{
+  color: rgb(223, 169, 19);    
+  font-family: 'Open Sans',sans-serif;
+  font-size: 14px
+}
 
 /*   --------- PAGE MENU    -----------------*/
 
@@ -201,7 +235,8 @@ input[type=submit] {
   border-radius: 5px;
   background-color: #646262;
   padding: 20px;
-  width: 50%;
+  width: 80%;
+  height: 80%;
 }
 
 .col-25 {
