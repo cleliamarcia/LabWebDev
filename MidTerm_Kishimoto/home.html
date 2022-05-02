@@ -19,33 +19,83 @@
     function changePage(num) {
        if (num== 0){
         var page ='frame.html';
+        document.getElementById("home").style.color= "rgb(223, 169, 19)";
+        document.getElementById("menu").style.color= "white";
+        document.getElementById("gallery").style.color= "white";
+        document.getElementById("about").style.color= "white";
+        document.getElementById("covid").style.color= "white";
+        document.getElementById("reservation").style.color= "white";
+        document.getElementById("news").style.color= "white";
+
        }
        if (num== 1){
         var page ='menu.html';
+        document.getElementById("menu").style.color= "rgb(223, 169, 19)";
+        document.getElementById("home").style.color= "white";
+        document.getElementById("gallery").style.color= "white";
+        document.getElementById("about").style.color= "white";
+        document.getElementById("covid").style.color= "white";
+        document.getElementById("reservation").style.color= "white";
+        document.getElementById("news").style.color= "white";
        
        }
 
        if (num== 2){
         var page ='gallery.html';
+        document.getElementById("gallery").style.color= "rgb(223, 169, 19)";
+        document.getElementById("menu").style.color= "white";
+        document.getElementById("home").style.color= "white";
+        document.getElementById("about").style.color= "white";
+        document.getElementById("covid").style.color= "white";
+        document.getElementById("reservation").style.color= "white";
+        document.getElementById("news").style.color= "white";
        }
 
        if (num== 3){
         var page ='about.html';
+        document.getElementById("about").style.color= "rgb(223, 169, 19)";
+        document.getElementById("menu").style.color= "white";
+        document.getElementById("gallery").style.color= "white";
+        document.getElementById("home").style.color= "white";
+        document.getElementById("covid").style.color= "white";
+        document.getElementById("reservation").style.color= "white";
+        document.getElementById("news").style.color= "white";
        
        }
 
        if (num== 4){
         var page ='covid.html';
+        document.getElementById("covid").style.color= "rgb(223, 169, 19)";
+        document.getElementById("menu").style.color= "white";
+        document.getElementById("gallery").style.color= "white";
+        document.getElementById("about").style.color= "white";
+        document.getElementById("home").style.color= "white";
+        document.getElementById("reservation").style.color= "white";
+        document.getElementById("news").style.color= "white";
        
        }
        
        if (num== 5){
         var page ='reservation.html';
+        document.getElementById("reservation").style.color= "rgb(223, 169, 19)";
+        document.getElementById("menu").style.color= "white";
+        document.getElementById("gallery").style.color= "white";
+        document.getElementById("about").style.color= "white";
+        document.getElementById("covid").style.color= "white";
+        document.getElementById("home").style.color= "white";
+        document.getElementById("news").style.color= "white";
        
        }
        
        if (num== 6){
         var page ='news.html';
+        document.getElementById("news").style.color= "rgb(223, 169, 19)";
+        document.getElementById("menu").style.color= "white";
+        document.getElementById("gallery").style.color= "white";
+        document.getElementById("about").style.color= "white";
+        document.getElementById("covid").style.color= "white";
+        document.getElementById("reservation").style.color= "white";
+        document.getElementById("home").style.color= "white";
        
        }
        
@@ -60,13 +110,13 @@
             <div><image width="43%" src="images/logoKishmoto.png"></image></div>
             <div class="topmenu"></div>
             <div>
-                <a href="#" class="menu" onClick="changePage(0)">HOME</a>
-                <a href="#" class="menu" onClick="changePage(1)">MENU</a>
-                <a href="#" class="menu" onClick="changePage(2)">GALLERY</a>
-                <a href="#" class="menu" onClick="changePage(3)">ABOUT</a>
-                <a href="#" class="menu" onClick="changePage(4)">COVID</a>
-                <a href="#" class="menu" onClick="changePage(5)">RESERVATION</a>
-                <a href="#" class="menu" onClick="changePage(6)">NEWS</a>
+                <a href="#" class="menu" onClick="changePage(0)" id="home">HOME</a>
+                <a href="#" class="menu" onClick="changePage(1)" id="menu">MENU</a>
+                <a href="#" class="menu" onClick="changePage(2)" id="gallery">GALLERY</a>
+                <a href="#" class="menu" onClick="changePage(3)" id="about">ABOUT</a>
+                <a href="#" class="menu" onClick="changePage(4)" id="covid">COVID</a>
+                <a href="#" class="menu" onClick="changePage(5)" id="reservation">RESERVATION</a>
+                <a href="#" class="menu" onClick="changePage(6)" id="news">NEWS</a>
             </div>
         </div>
 
@@ -107,7 +157,7 @@
                 <p>
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4888.362996916603!2d-123.07378826883715!3d49.26671483226515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548671462f931067%3A0x3ebdf4dc0245bb!2sKishimoto%20Japanese%20Restaurant!5e1!3m2!1spt-BR!2sca!4v1651441496613!5m2!1spt-BR!2sca" width="700" height="200" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                 </p>
-                           </div>
+            </div>
         </div>
         </div>
         <div class="footfinal">
