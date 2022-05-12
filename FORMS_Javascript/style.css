@@ -1,0 +1,110 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+  }
+
+  body{
+    display:flex;
+  }
+
+  input [type=text], [type=email],  [type=password], [type=tel], [type=number], [type=date], select {
+    width: 65%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+     margin-top: 8px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  input [type=text] {
+    width: 65%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+     margin-top: 8px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+
+
+  textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+     margin-top: 8px;
+    box-sizing: border-box;   
+  }
+
+  label {
+    padding: 12px 12px 12px 12px;
+    display: inline-block;
+    color:black;
+    font-style: oblique;
+    
+  }
+  
+  button{
+    background-color: #313534;
+    color: white;
+    padding: 12px 20px;
+    margin-left: 8px;
+    margin-top: 8px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+
+  
+  .form-inline{
+    display:flex;
+    width:50%;
+    gap:1rem;
+  }
+
+  .list-group {
+    gap:1rem;
+    padding: 1rem;
+  }
+  
+  .list-group-item {
+    display: grid;
+    grid-template-columns: 4fr 1fr 1fr;
+    padding:.5rem 1rem;
+    width: 50%;
+    align-items: center;
+  }
+
+  .list-group-item+.list-group-item {
+    border-top-width: 1px;
+  }
+  
+  .icon{
+    background-color:lightgray;
+    border-radius:50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding:.5rem;
+    margin:.5rem;
+    cursor:pointer;
+    height: 40px;
+    width: 40px;
+  }
+  
+  .uil-trash-alt {
+    background-color: tomato;
+    color:white;
+  }
+  
+  .task-input{
+    display:none;
+    align-self: center;
+  }
+  
+  .task-text {
+      align-self: center;
+  }
